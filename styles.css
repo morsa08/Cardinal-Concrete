@@ -115,6 +115,8 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: .02rem;
 }
 
 .servicePic {
