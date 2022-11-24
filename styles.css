@@ -32,7 +32,8 @@ h1 {
 
 .callBtn {
   border-style: solid;
-  border-radius: 5%;
+  border-radius: 10%;
+  padding: 0 .5rem;
   color: white;
   background-color: rgb(229, 6, 6);
   text-decoration: none;
@@ -115,8 +116,6 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-
 
 .servicePic {
   height: auto;
