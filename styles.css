@@ -1,0 +1,128 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #541010;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  color: white;
+}
+
+.about {
+  /* width: 60%; */
+  text-align: center;
+  color: black;
+  background-color: white;
+  font-size: 2rem;
+}
+
+.active {
+  color: black !important;
+}
+
+.brandLogo {
+  width: 8rem;
+  object-fit: cover;
+}
+
+.callBtn {
+  border-style: solid;
+  border-radius: 5%;
+  color: white;
+  background-color: rgb(229, 6, 6);
+  text-decoration: none;
+
+}
+
+.contact {
+  /* width: 60%; */
+  text-align: center;
+  background-color: white;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact a {
+  display: block;
+}
+
+.facebook{
+  display: flex;
+  align-self: center;
+  width: 25%;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+}
+
+.hero h1 {
+  color: black !important;
+}
+
+.heroPic {
+  display: flex;
+  justify-content: center;
+  height: 60%;
+  /* width: 60%; */
+  padding: 0;
+  text-align: center;
+  font-size: 2rem;
+  background-image: url(Images/pour.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heroText {
+  align-self: center;
+  align-content: center;
+  background-color: white;
+  width: 100%;
+}
+
+.navbar {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.navbar-brand {
+  color: black;
+}
+
+.nav-link {
+  color: black;
+}
+
+.services {
+  /* width: 60%; */
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  background-image: url("Images/poolStairsFinished.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+.servicePic {
+  height: auto;
+  max-width: 100%;
+}
+
+.container-width {
+  width: 90%;
+}
