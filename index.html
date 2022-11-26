@@ -2,6 +2,12 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
@@ -18,45 +24,45 @@
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
-        <img class="brandLogo" src="Images/cardinalRedHighQuality.jpg" alt="">
+        <img class="brandLogo" src="Images/cardinalBlackCrop.jpg" alt="">
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    
-    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="about.html">About</a>
+            <a class="nav-link" aria-current="page" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="services.html">Services</a>
+            <a class="nav-link " aria-current="page" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
-        <a class="callBtn" href="tel:9036768100">Call Now!</a>
+        <a class="callBtn" href="tel:9036768100"><i class="callIcon fa-solid fa-phone"></i>Call</a>
       </div>
     </div>
   </nav>
 
 
 
-  <div class="container-fluid heroPic container-width">
+  <div id="hero" class="container-fluid heroPic container-width">
     <p class="heroText">"We provide a concrete solution"</p>
   </div>
 
-  <div class="about container-fluid container-width">
+  <div id="about" class="about container-fluid container-width">
     <h2>Cardinal Concrete</h2>
     <p>is a full service concrete company based out of Kaufman, Texas. We serve the DFW and surrounding areas. From
       stairs to pools, we offer a concrete solution to your needs.</p>
   </div>
 
-  <div class="container-fluid services  container-width">
+  <div id="services" class="container-fluid services  container-width">
     <ul>
       <li>Custom finishes and stamping </li>
       <li>Building and home foundations </li>
@@ -71,11 +77,52 @@
     </ul>
   </div>
 
-  <div class="contact container-fluid container-width">
+  <div class="carouselContainer">
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade carousel-dark" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item ">
+          <img src="Images/PatioWide.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item active">
+          <img src="Images/houseLevel.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/foundation.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/fancyDesing.jpg" class="d-block w-100" alt="">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div id="contact" class="contact container-fluid container-width">
     <h2>Contact Us Today!</h2>
     <a href="tel:9036768100">Phone: (903) 676-8100</a>
     <a href="mailto:cardinal_concrete@yahoo.com">Email: cardinal_concrete@yahoo.com</a>
   </div>
+
+
 
   <div class="facebook container-fluid ">
     <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100078003861853" data-show-posts="true"

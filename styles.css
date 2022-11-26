@@ -7,6 +7,7 @@ body {
   background-color: #541010;
   height: 100%;
   width: 100%;
+  font-family: "roboto", sans-serif;
 }
 
 h1 {
@@ -16,9 +17,17 @@ h1 {
 .about {
   /* width: 60%; */
   text-align: center;
-  color: black;
-  background-color: white;
-  font-size: 2rem;
+  color: white;
+  background-color: rgb(37, 37, 37);
+  font-size: 1.5rem;
+  font-family: "roboto", sans-serif;
+  font-weight: 300;
+  padding-top: .75rem;
+}
+
+.about h2{
+text-decoration: underline;
+text-decoration-color: black;
 }
 
 .active {
@@ -32,12 +41,28 @@ h1 {
 
 .callBtn {
   border-style: solid;
-  border-radius: 10%;
+  border-radius: 12px;
   padding: 0 .5rem;
   color: white;
   background-color: rgb(229, 6, 6);
   text-decoration: none;
 
+}
+
+.callIcon{
+  margin-right: 1rem;
+}
+
+.carousel{
+ width: 50%;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.carousel-inner > .carousel-item > img {
+  width:640px;
+  height:360px;
+  object-fit: contain;
 }
 
 .contact {
@@ -58,16 +83,6 @@ h1 {
   width: 25%;
 }
 
-.hero {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: white;
-}
-
-.hero h1 {
-  color: black !important;
-}
 
 .heroPic {
   display: flex;
@@ -75,6 +90,7 @@ h1 {
   height: 60%;
   /* width: 60%; */
   padding: 0;
+  margin-bottom: 1rem;
   text-align: center;
   font-size: 2rem;
   background-image: url(Images/pour.jpg);
@@ -86,7 +102,7 @@ h1 {
 .heroText {
   align-self: center;
   align-content: center;
-  background-color: white;
+  background-color: rgba(171, 170, 170, 0.648);
   width: 100%;
 }
 
@@ -95,6 +111,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding: 0;
+  background-color: black!important;
 }
 
 .navbar-brand {
@@ -102,8 +119,13 @@ h1 {
 }
 
 .nav-link {
-  color: black;
-}
+  color: white;
+  
+ }
+
+ .nav-link:hover{
+  color: red;
+ }
 
 .services {
   /* width: 60%; */
@@ -125,5 +147,5 @@ h1 {
 }
 
 .container-width {
-  width: 90%;
+  width: 100%;
 }
