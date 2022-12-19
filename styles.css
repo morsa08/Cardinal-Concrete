@@ -4,7 +4,8 @@ html {
 }
 
 body {
-  background-color: #541010;
+  /* background-color: #541010; */
+  background-color: #2e1111;
   height: 100%;
   width: 100%;
   font-family: "roboto", sans-serif;
@@ -15,19 +16,24 @@ h1 {
 }
 
 .about {
-  /* width: 60%; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: rgb(242, 230, 230);
   text-align: center;
-  color: white;
-  background-color: rgb(37, 37, 37);
   font-size: 1.5rem;
   font-family: "roboto", sans-serif;
-  font-weight: 300;
-  padding-top: .75rem;
+  background-color: black;
+ 
+  }
+
+.about h2 {
+  text-decoration: underline;
+  text-decoration-color: black;
 }
 
-.about h2{
-text-decoration: underline;
-text-decoration-color: black;
+.aboutText{
+  width: 80%;
 }
 
 .active {
@@ -44,31 +50,33 @@ text-decoration-color: black;
   border-radius: 12px;
   padding: 0 .5rem;
   color: white;
-  background-color: rgb(229, 6, 6);
+  background-color: rgb(8 7 7);
   text-decoration: none;
-
+  border-color: #eb4242;
 }
 
-.callIcon{
+ .callIcon {
   margin-right: 1rem;
 }
 
-.carousel{
- width: 50%;
- margin-left: auto;
- margin-right: auto;
+.carousel {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.carousel-inner > .carousel-item > img {
-  width:640px;
-  height:360px;
+.carousel-inner>.carousel-item>img {
+  /* width: 640px;
+  height: 360px; */
+  width: 75%;
+  height: 50%;
   object-fit: contain;
 }
 
 .contact {
-  /* width: 60%; */
   text-align: center;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
+  color: white;
   font-size: 2rem;
   margin-bottom: 10px;
 }
@@ -83,27 +91,71 @@ text-decoration-color: black;
   width: 25%;
 }
 
+.fadeInText {
+  animation: fadeIn 6s;
+  
+}
 
-.heroPic {
-  display: flex;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+ .fadeTextInSlower {
+  animation: fadeInSlower 8s;
+}
+
+@keyframes fadeInSlower {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.heroContainer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+  height: 90%;
   justify-content: center;
-  height: 60%;
-  /* width: 60%; */
-  padding: 0;
+   padding-top: 2rem;
   margin-bottom: 1rem;
-  text-align: center;
+  text-align: left;
   font-size: 2rem;
-  background-image: url(Images/pour.jpg);
-  background-size: cover;
+  background: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("NewImages/pourEdit.gif");
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
+}
+
+.heroSubtext {
+  color: rgb(255, 255, 255);
+  margin-right: auto;
+  margin-left: 10%;
+  display: inline-block;
+  padding-top: 2rem;
+  position: relative;
+}
+
+.heroSubtext p{
+display: inline;
 }
 
 .heroText {
-  align-self: center;
-  align-content: center;
-  background-color: rgba(171, 170, 170, 0.648);
-  width: 100%;
+  align-self: flex-start;
+  margin-right: auto;
+  color: azure;
+  font-family: "Raleway", sans-serif;
+  font-size: 6rem;
+  margin-left: 5%;
 }
 
 .navbar {
@@ -111,7 +163,7 @@ text-decoration-color: black;
   display: flex;
   justify-content: space-between;
   padding: 0;
-  background-color: black!important;
+  background-color: black !important;
 }
 
 .navbar-brand {
@@ -120,32 +172,119 @@ text-decoration-color: black;
 
 .nav-link {
   color: white;
-  
- }
+}
 
- .nav-link:hover{
+.nav-link:hover {
   color: red;
- }
+}
+
+.reviews {
+  margin-left: 4rem;
+  color: rgba(255, 255, 255, 0.574);
+  bottom: -145px;
+}
 
 .services {
-  /* width: 60%; */
-  text-align: center;
-  color: black;
-  font-size: 2rem;
-  font-weight: bold;
-  background-image: url("Images/poolStairsFinished.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-text-stroke-color: white;
-  -webkit-text-stroke-width: .02rem;
+    text-align: center;
+    color: #f5eded;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-image: linear-gradient(rgb(0 0 0 / 72%), rgb(0 0 0 / 67%)),url(NewImages/stairsLaborPerfect.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    -webkit-text-stroke-color: #ffdfdf;
+    -webkit-text-stroke-width: 0.02rem;
+    background-position-y: 33%;
+    margin-top: 1rem;
 }
+
+.services ul{
+  /* column-count: 2; */
+  list-style: none ;
+  }
 
 .servicePic {
   height: auto;
   max-width: 100%;
 }
 
+.heroImg{
+  object-fit: cover;
+  width: 85%;
+}
+
+.underline{
+  text-decoration: underline;
+  text-decoration-color: #c04242;
+}
+
 .container-width {
   width: 100%;
 }
+
+
+.animated-text {
+  display: inline-flex;
+  transition: 300ms all;
+  color: #c04242;
+  height: 50px;
+  padding: 0;
+  margin-bottom: 10%;
+  overflow: hidden;
+  flex-direction: column;
+  position: relative;
+}
+
+.animated-text span {
+  animation: slide 8s linear 3s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateY(0);
+  }
+
+  5% {
+    transform: translateY(0);
+  }
+
+  15% {
+    transform: translateY(-48px);
+  }
+
+  25% {
+    transform: translateY(-48px);
+  }
+
+  35% {
+    transform: translateY(-96px);
+  }
+
+  45% {
+    transform: translateY(-96px);
+  }
+
+  55% {
+    transform: translateY(-144px);
+  }
+
+  65% {
+    transform: translateY(-144px);
+  }
+
+  75% {
+    transform: translateY(-192px);
+  }
+
+  95% {
+    transform: translateY(-192px);
+  }
+
+  100% {
+    transform: translateY(-192px);
+  }
+}
+ 
