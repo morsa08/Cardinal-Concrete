@@ -6,6 +6,7 @@ html {
 body {
   /* background-color: #541010; */
   background-color: #2e1111;
+  background-image: url("newImages/concreteTexture.jpg");
   height: 100%;
   width: 100%;
   font-family: "roboto", sans-serif;
@@ -24,20 +25,40 @@ h1 {
   font-size: 1.5rem;
   font-family: "roboto", sans-serif;
   background-color: black;
- 
-  }
+  padding-top: 1rem;
+  background-image: url("NewImages/concreteTexture.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
 
 .about h2 {
   text-decoration: underline;
   text-decoration-color: black;
 }
 
-.aboutText{
+.aboutText {
   width: 80%;
 }
 
 .active {
   color: black !important;
+}
+
+.animated-text {
+  display: inline-flex;
+  transition: 300ms all;
+  color: #ea1818;
+  height: 4rem;
+  padding: 0;
+  overflow: hidden;
+  flex-direction: column;
+  position: relative;
+}
+
+.animated-text span {
+  animation: slide 8s linear 3s;
+  animation-fill-mode: forwards;
 }
 
 .brandLogo {
@@ -46,16 +67,14 @@ h1 {
 }
 
 .callBtn {
-  border-style: solid;
-  border-radius: 12px;
+  font-size: 1.5rem;
   padding: 0 .5rem;
-  color: white;
+  color: #ea1818;
   background-color: rgb(8 7 7);
   text-decoration: none;
-  border-color: #eb4242;
 }
 
- .callIcon {
+.callIcon {
   margin-right: 1rem;
 }
 
@@ -74,15 +93,19 @@ h1 {
 }
 
 .contact {
+  width: 75%;
   text-align: center;
   background-color: rgb(0, 0, 0);
   color: white;
   font-size: 2rem;
-  margin-bottom: 10px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
 }
 
 .contact a {
-  display: block;
+  display: inline-block;
+  color: #be0303;
 }
 
 .facebook {
@@ -93,7 +116,7 @@ h1 {
 
 .fadeInText {
   animation: fadeIn 6s;
-  
+
 }
 
 @keyframes fadeIn {
@@ -106,7 +129,7 @@ h1 {
   }
 }
 
- .fadeTextInSlower {
+.fadeTextInSlower {
   animation: fadeInSlower 8s;
 }
 
@@ -126,8 +149,7 @@ h1 {
   grid-template-rows: auto auto;
   height: 90%;
   justify-content: center;
-   padding-top: 2rem;
-  margin-bottom: 1rem;
+  padding-top: 2rem;
   text-align: left;
   font-size: 2rem;
   background: black;
@@ -138,15 +160,15 @@ h1 {
 
 .heroSubtext {
   color: rgb(255, 255, 255);
+  font-size: 3rem;
   margin-right: auto;
   margin-left: 10%;
   display: inline-block;
-  padding-top: 2rem;
   position: relative;
 }
 
-.heroSubtext p{
-display: inline;
+.heroSubtext p {
+  display: inline;
 }
 
 .heroText {
@@ -170,6 +192,10 @@ display: inline;
   color: black;
 }
 
+.navbar-toggler {
+  background-color: rgba(255, 255, 255, 0.702);
+}
+
 .nav-link {
   color: white;
 }
@@ -179,42 +205,48 @@ display: inline;
 }
 
 .reviews {
-  margin-left: 4rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   color: rgba(255, 255, 255, 0.574);
   bottom: -145px;
 }
 
 .services {
-    text-align: center;
-    color: #f5eded;
-    font-size: 2.5rem;
-    font-weight: bold;
-    background-image: linear-gradient(rgb(0 0 0 / 72%), rgb(0 0 0 / 67%)),url(NewImages/stairsLaborPerfect.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* background-position: center; */
-    -webkit-text-stroke-color: #ffdfdf;
-    -webkit-text-stroke-width: 0.02rem;
-    background-position-y: 33%;
-    margin-top: 1rem;
+  text-align: center;
+  color: #f5eded;
+  font-size: 2.5rem;
+  background-image: linear-gradient(rgb(0 0 0 / 72%), rgb(0 0 0 / 67%)), url(NewImages/stairsLaborPerfect.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 33%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.services ul{
-  /* column-count: 2; */
-  list-style: none ;
-  }
+.services p {
+  font-family: 'Heebo', sans-serif;
+  text-decoration: underline;
+}
+
+.services ul {
+  column-count: 2;
+  list-style: none;
+  margin-bottom: 0;
+  font-family: 'Heebo', sans-serif;
+}
 
 .servicePic {
   height: auto;
   max-width: 100%;
 }
 
-.heroImg{
+.heroImg {
   object-fit: cover;
   width: 85%;
 }
 
-.underline{
+.underline {
   text-decoration: underline;
   text-decoration-color: #c04242;
 }
@@ -224,22 +256,7 @@ display: inline;
 }
 
 
-.animated-text {
-  display: inline-flex;
-  transition: 300ms all;
-  color: #c04242;
-  height: 50px;
-  padding: 0;
-  margin-bottom: 10%;
-  overflow: hidden;
-  flex-direction: column;
-  position: relative;
-}
 
-.animated-text span {
-  animation: slide 8s linear 3s;
-  animation-fill-mode: forwards;
-}
 
 
 @keyframes slide {
@@ -252,39 +269,58 @@ display: inline;
   }
 
   15% {
-    transform: translateY(-48px);
+    transform: translateY(-4.5rem);
   }
 
   25% {
-    transform: translateY(-48px);
+    transform: translateY(-4.5rem);
   }
 
   35% {
-    transform: translateY(-96px);
+    transform: translateY(-9rem);
   }
 
   45% {
-    transform: translateY(-96px);
+    transform: translateY(-9rem);
   }
 
   55% {
-    transform: translateY(-144px);
+    transform: translateY(-13.5rem);
   }
 
   65% {
-    transform: translateY(-144px);
+    transform: translateY(-13.5rem);
   }
 
   75% {
-    transform: translateY(-192px);
+    transform: translateY(-18rem);
   }
 
   95% {
-    transform: translateY(-192px);
+    transform: translateY(-18rem);
   }
 
   100% {
-    transform: translateY(-192px);
+    transform: translateY(-18rem);
   }
 }
- 
+
+@media screen and (max-width: 768px) {
+  .heroText {
+    width: 100%;
+    font-size: 4rem;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heroContainer {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services ul {
+    column-count: 1;
+  }
+}
