@@ -18,8 +18,9 @@ h1 {
 
 .about {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 80%;
   color: rgb(242, 230, 230);
   text-align: center;
   font-size: 1.5rem;
@@ -32,13 +33,14 @@ h1 {
 
 }
 
-.about h2 {
-  text-decoration: underline;
-  text-decoration-color: black;
+.aboutList{
+
 }
 
 .aboutText {
-  width: 80%;
+  width: 50%;
+  height: 100%;
+  text-align: center;
 }
 
 .active {
@@ -84,6 +86,10 @@ h1 {
   margin-right: auto;
 }
 
+.carouselContainer {
+  background-color: black;
+}
+
 .carousel-inner>.carousel-item>img {
   /* width: 640px;
   height: 360px; */
@@ -106,6 +112,15 @@ h1 {
 .contact a {
   display: inline-block;
   color: #be0303;
+}
+
+.estimateBtn {
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+  border-radius: 10%;
+  color: inherit;
+  background-color: rgb(105 9 9);
+  text-decoration: none;
 }
 
 .facebook {
@@ -180,6 +195,29 @@ h1 {
   margin-left: 5%;
 }
 
+.icons {
+  width: 6rem;
+  margin: 1rem;
+  background-color: white;
+  filter: invert(100);
+}
+
+.list {
+  /* background: white; */
+  width: 100%;
+  border-radius: 10%;
+}
+
+.listItem {
+  display: inline-block;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.listItem p {
+  display: inline;
+}
+
 .navbar {
   font-size: 2rem;
   display: flex;
@@ -212,11 +250,24 @@ h1 {
   bottom: -145px;
 }
 
+.serviceLists {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  height: 60%;
+  place-items: center;
+  font-size: 2rem;
+}
+
 .services {
+  width: 100%;
   text-align: center;
   color: #f5eded;
   font-size: 2.5rem;
-  background-image: linear-gradient(rgb(0 0 0 / 72%), rgb(0 0 0 / 67%)), url(NewImages/stairsLaborPerfect.jpg);
+  /* background-image: linear-gradient(rgb(0 0 0 / 72%), rgb(0 0 0 / 67%)), url(NewImages/stairsLaborPerfect.jpg); */
+  background: black;
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 33%;
@@ -224,21 +275,21 @@ h1 {
   padding-bottom: 1rem;
 }
 
-.services p {
+.services h3 {
   font-family: 'Heebo', sans-serif;
-  text-decoration: underline;
+  font-weight: 600;
+  font-size: 4rem;
+  margin-top: 2rem;
 }
 
 .services ul {
-  column-count: 2;
+  color: black;
+  background: #4f1717;
+  border-radius: 5%;
   list-style: none;
   margin-bottom: 0;
   font-family: 'Heebo', sans-serif;
-}
-
-.servicePic {
-  height: auto;
-  max-width: 100%;
+  padding: 1rem;
 }
 
 .heroImg {
@@ -306,21 +357,34 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
+
+  .aboutText{
+    width: 100%;
+  }
+
+  .about{
+    flex-direction: column;
+  }
+
   .heroText {
     width: 100%;
     font-size: 4rem;
     margin-left: 0;
   }
-}
 
-@media screen and (max-width: 768px) {
+  .serviceLists {
+    grid-template-columns: auto;
+  }
+
   .heroContainer {
     text-align: center;
   }
-}
 
-@media screen and (max-width: 768px) {
-  .services ul {
-    column-count: 1;
+  .heroSubtext {
+    margin: 0 auto;
+  }
+
+  .reviews {
+    flex-direction: column;
   }
 }
