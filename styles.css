@@ -5,7 +5,7 @@ html {
 
 body {
   /* background-color: #541010; */
-  background-color: #2e1111;
+  background-color: black;
   height: 100%;
   width: 100%;
   font-family: "roboto", sans-serif;
@@ -16,27 +16,39 @@ h1 {
 }
 
 .about {
+  background-color: black;
+  background-image: url("newImages1/concreteTextureCrop2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.aboutText {
+  height: 100%;
+  width: 80%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.aboutTextContainer {
+  height: 100%;
+  width: 80%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   margin: 0 auto;
   color: rgb(242, 230, 230);
+  background: #00000066;
   text-align: center;
   font-size: 1.5rem;
   font-family: "roboto", sans-serif;
-  background-color: black;
-  background-image: url("newImages1/concreteTexture.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-
+  font-weight: 500;
 }
 
-.aboutList {}
+.aboutText h2 {
+  font-size: 3rem;
+}
 
-.aboutText {
-  width: 50%;
-  text-align: center;
-  background: #00000082;
+.aboutText.story {
+  font-weight: 300;
 }
 
 .active {
@@ -87,10 +99,7 @@ h1 {
 }
 
 .carousel-inner>.carousel-item>img {
-  /* width: 640px;
-  height: 360px; */
-  width: 75%;
-  height: 50%;
+  height: 500px;
   object-fit: contain;
 }
 
@@ -102,7 +111,6 @@ h1 {
   font-size: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-
 }
 
 .contact a {
@@ -117,12 +125,8 @@ h1 {
   color: inherit;
   background-color: rgb(105 9 9);
   text-decoration: none;
-}
-
-.facebook {
-  display: flex;
-  align-self: center;
-  width: 25%;
+  display: block;
+  margin: 0 auto;
 }
 
 .fadeInText {
@@ -164,8 +168,8 @@ h1 {
   text-align: left;
   font-size: 2rem;
   background: black;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), 
-  rgba(0, 0, 0, 0.5)), url("newImages1/pourEdit.gif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)), url("newImages1/pourEdit.gif");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -209,6 +213,11 @@ h1 {
   display: block;
   margin: 1rem 0;
   text-align: center;
+  font-size: 2rem;
+}
+
+.listItem i {
+  color: #742020;
 }
 
 .listItem p {
@@ -239,6 +248,10 @@ h1 {
   color: red;
 }
 
+.redText {
+  color: #742020;
+}
+
 .reviews {
   display: flex;
   justify-content: center;
@@ -250,7 +263,7 @@ h1 {
 .serviceLists {
   display: grid;
   width: 80%;
-  margin: 0 auto;
+  margin: 2rem auto;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
   height: 60%;
@@ -275,7 +288,7 @@ h1 {
 .services h3 {
   font-family: 'Heebo', sans-serif;
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-top: 2rem;
 }
 
@@ -357,6 +370,11 @@ h1 {
 
   .aboutText {
     width: 100%;
+  }
+
+  .aboutTextContainer {
+    flex-flow: column;
+    place-items: center;
   }
 
   .about {
