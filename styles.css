@@ -164,7 +164,8 @@ h1 {
   text-align: left;
   font-size: 2rem;
   background: black;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("newImages1/pourEdit.gif");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), 
+  rgba(0, 0, 0, 0.5)), url("newImages1/pourEdit.gif");
   background-repeat: no-repeat;
   background-size: cover;
 }
