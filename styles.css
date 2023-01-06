@@ -6,7 +6,6 @@ html {
 body {
   /* background-color: #541010; */
   background-color: #2e1111;
-  background-image: url("newImages/concreteTexture.jpg");
   height: 100%;
   width: 100%;
   font-family: "roboto", sans-serif;
@@ -18,29 +17,26 @@ h1 {
 
 .about {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
-  width: 80%;
   color: rgb(242, 230, 230);
   text-align: center;
   font-size: 1.5rem;
   font-family: "roboto", sans-serif;
   background-color: black;
-  padding-top: 1rem;
   background-image: url("NewImages/concreteTexture.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 
 }
 
-.aboutList{
-
-}
+.aboutList {}
 
 .aboutText {
   width: 50%;
-  height: 100%;
   text-align: center;
+  background: #00000082;
 }
 
 .active {
@@ -209,9 +205,9 @@ h1 {
 }
 
 .listItem {
-  display: inline-block;
+  display: block;
   margin: 1rem 0;
-  text-align: left;
+  text-align: center;
 }
 
 .listItem p {
@@ -284,7 +280,7 @@ h1 {
 
 .services ul {
   color: black;
-  background: #4f1717;
+  background: #742020;
   border-radius: 5%;
   list-style: none;
   margin-bottom: 0;
@@ -358,11 +354,11 @@ h1 {
 
 @media screen and (max-width: 768px) {
 
-  .aboutText{
+  .aboutText {
     width: 100%;
   }
 
-  .about{
+  .about {
     flex-direction: column;
   }
 
