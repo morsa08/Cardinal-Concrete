@@ -390,6 +390,7 @@ h1 {
 
   .heroContainer {
     text-align: center;
+    height: auto;
   }
 
   .heroSubtext {
@@ -402,6 +403,7 @@ h1 {
 
   .reviews {
     flex-direction: column;
+    margin-top: 2rem;
   }
 
   .serviceLists {
