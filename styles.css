@@ -111,7 +111,7 @@ h1 {
   font-size: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
- }
+}
 
 .contact a {
   display: inline-block;
@@ -388,10 +388,6 @@ h1 {
     margin-left: 0;
   }
 
-  .serviceLists {
-    grid-template-columns: auto;
-  }
-
   .heroContainer {
     text-align: center;
   }
@@ -400,7 +396,15 @@ h1 {
     margin: 0 auto;
   }
 
+  .listItem {
+    font-size: 1.5rem;
+  }
+
   .reviews {
     flex-direction: column;
+  }
+
+  .serviceLists {
+    grid-template-columns: auto;
   }
 }
