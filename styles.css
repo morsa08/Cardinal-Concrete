@@ -111,12 +111,12 @@ h1 {
   font-size: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  overflow-wrap: break-word;
-}
+ }
 
 .contact a {
   display: inline-block;
   color: #be0303;
+  overflow-wrap: anywhere;
 }
 
 .estimateBtn {
