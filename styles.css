@@ -17,7 +17,7 @@ h1 {
 
 .about {
   background-color: black;
-  background-image: url("newImages1/concreteTextureCrop2.jpg");
+  background-image: url("Images/concreteTextureCrop2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -170,7 +170,7 @@ h1 {
   font-size: 2rem;
   background: black;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)), url("newImages1/pourEdit.gif");
+      rgba(0, 0, 0, 0.5)), url("Images/pourEdit.gif");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -277,7 +277,7 @@ h1 {
   text-align: center;
   color: #f5eded;
   font-size: 2.5rem;
-  /* background-image: linear-gradient(rgb(0 0 0 / 72%), rgb(0 0 0 / 67%)), url(newImages11/stairsLaborPerfect.jpg); */
+  /* background-Images: linear-gradient(rgb(0 0 0 / 72%), rgb(0 0 0 / 67%)), url(Imagess1/stairsLaborPerfect.jpg); */
   background: black;
   background-size: cover;
   background-repeat: no-repeat;
